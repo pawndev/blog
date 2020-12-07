@@ -1,15 +1,58 @@
 # The URL the site will be built for
 base_url = "https://pawndev.com"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+title = "Pawndev's blog"
+description = "Un blog ou je partage tout ce que je peux, et qui me sert aussi de memo."
+default_language = "fr"
 
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+compile_sass = true
 highlight_code = true
+highlight_theme = "visual-studio-dark"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+generate_feed = true
+taxonomies = [
+    {name = "tags", rss = true}
+]
+#
+#languages = [
+#    {code = "fr", rss = true},
+#    {code = "en", rss = true},
+#]
+
+ignored_content = []
+extra_syntaxes = []
+emoji_rendering = true
+
+[translations]
+    [translations.fr]
+    tags = "Catégories"
+
+    [translations.en]
+    tags = "Tags"
+
 [extra]
-# Put all your custom variables here
+home_subtitle = "If brute force doesn’t solve your problems, then you aren’t using enough. "
+
+hermit_social = [
+    { name = "github", link = "https://github.com/pawndev" },
+    { name = "email", link = "mailto:coquelet.c@gmail.com" }
+]
+
+accent_color = "grey"
+
+[extra.highlightjs]
+enable = false
+clipboard = false
+theme = "vs2015"
+notebook = false
+
+[extra.author]
+name = "Christophe Coquelet"
+email = "coquelet.c@gmail.com"
+
+[extra.google_analytics]
+enable = false
+id = "UA-4XXXXXXX-X"
