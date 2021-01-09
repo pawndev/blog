@@ -1,11 +1,11 @@
 # The URL the site will be built for
 base_url = "https://pawndev.com"
-
+theme = "hermit_zola"
 title = "Pawndev's blog"
 description = "Un blog ou je partage tout ce que je peux, et qui me sert aussi de memo."
 default_language = "fr"
 
-compile_sass = true
+compile_sass = false
 highlight_code = true
 highlight_theme = "visual-studio-dark"
 
