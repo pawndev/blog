@@ -1,4 +1,4 @@
-baseURL = 'https://pawndev.github.io/'
+baseURL = 'https://pawndev.github.io/blog'
 languageCode = 'en-us'
 title = "Pawndev's Seal Ranch"
 theme = 'LoveIt'
