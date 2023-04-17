@@ -1,7 +1,72 @@
-baseURL = 'https://pawndev.github.io/blog'
+baseURL = 'https://blog.pawndev.com'
 languageCode = 'en-us'
 title = "Pawndev's Seal Ranch"
 theme = 'LoveIt'
+
+# defaultContentLanguage = 'en'
+# [languages]
+#   [languages.en]
+#     title = "Pawndev's Seal Ranch"
+#     languageName = 'English'
+#     languageCode = "en"
+#     contentDir = 'content/posts'
+#     weight = 1
+#     [[languages.en.menu.main]]
+#       weight = 1
+#       identifier = "posts"
+#       pre = ""
+#       post = ""
+#       name = "Posts"
+#       url = "/posts/"
+#       title = ""
+#     [[languages.en.menu.main]]
+#       weight = 2
+#       identifier = "tags"
+#       pre = ""
+#       post = ""
+#       name = "Tags"
+#       url = "/tags/"
+#       title = ""
+#     [[languages.en.menu.main]]
+#       weight = 3
+#       identifier = "categories"
+#       pre = ""
+#       post = ""
+#       name = "Categories"
+#       url = "/categories/"
+#       title = ""
+#   [languages.fr]
+#     title = "Pawndev's Seal Ranch"
+#     languageName = 'Français'
+#     languageCode = "fr"
+#     contentDir = 'content/fr/posts'
+#     weight = 2
+#     [[languages.fr.menu.main]]
+#       weight = 1
+#       identifier = "posts"
+#       pre = ""
+#       post = ""
+#       name = "Postes"
+#       url = "/posts/"
+#       title = ""
+#     [[languages.fr.menu.main]]
+#       weight = 2
+#       identifier = "tags"
+#       pre = ""
+#       post = ""
+#       name = "Tags"
+#       url = "/tags/"
+#       title = ""
+#     [[languages.fr.menu.main]]
+#       weight = 3
+#       identifier = "categories"
+#       name = "Catégories"
+#       pre = ""
+#       post = ""
+#       url = "/categories/"
+#       title = ""
+#       [languages.fr.params.navigation]
+#         help = 'Aide'
 
 # Author config
 [author]
