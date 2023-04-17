@@ -200,9 +200,9 @@ enableEmoji = true
 
   # Social config about the author
   [params.social]
-    GitHub = "https://github.com/pawndev"
-    Linkedin = "https://www.linkedin.com/in/coquel/"
-    Stackoverflow = "https://stackoverflow.com/users/5101921/christophe"
+    GitHub = "pawndev"
+    Linkedin = "coquel/"
+    Stackoverflow = "5101921/christophe"
     # Twitter = "xxxx"
     # Instagram = "xxxx"
     # Facebook = "xxxx"
