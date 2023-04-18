@@ -3,7 +3,7 @@ title: "Personal Git naming convention"
 date: 2023-04-18T14:25:07+02:00
 lastmod: 2023-04-18T14:25:07+02:00
 # publishDate: 2023-04-21T14:00:00+02:00
-draft: true
+draft: false
 description: "My personal git naming convention for branch and commit"
 tags: ['git', 'convention']
 categories: ['git', 'personal']
