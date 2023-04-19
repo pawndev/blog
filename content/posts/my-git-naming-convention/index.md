@@ -5,6 +5,7 @@ lastmod: 2023-04-18T14:25:07+02:00
 # publishDate: 2023-04-21T14:00:00+02:00
 draft: false
 description: "My personal git naming convention for branch and commit"
+summary: "My personal git naming convention for branch and commit"
 tags: ['git', 'convention']
 categories: ['git', 'personal']
 # featuredImage: '/images/git.png'
