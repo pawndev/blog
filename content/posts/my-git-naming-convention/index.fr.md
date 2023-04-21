@@ -45,7 +45,7 @@ Voici dans le tableau ci-dessous mes `type` utilisés, avec quelques exemples.
 
 Je ne remplie pas souvent le `body` des commits, mais quand je le fais, j'ajoute simplement une brève description de ce que mon commit apporte.
 
-## Branch
+## Branche
 
 Les noms de mes branches sont construites de manière très simple, et qui ressemble beaucoup au nommage de mes commits.
 
@@ -69,6 +69,6 @@ Et s'ils en contiennent plus d'une, alors :
 - `release/user-manager/2.0.0`
 - `hotfix/user-manager-importer/1.3.4`
 
-## The end.
+## Fin ?
 
 Je pense que c'est à peu près tout pour mes conventions de nommage perso sûr git. Merci d'avoir lu !
