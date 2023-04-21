@@ -1,13 +1,13 @@
 ---
 title: "Personal Git naming convention"
 date: 2023-04-18T14:25:07+02:00
-lastmod: 2023-04-18T14:25:07+02:00
+lastmod: 2023-04-21
 # publishDate: 2023-04-21T14:00:00+02:00
 draft: false
 description: "My personal git naming convention for branch and commit"
 summary: "My personal git naming convention for branch and commit"
 tags: ['git', 'convention']
-categories: ['git', 'personal']
+categories: ['git']
 # featuredImage: '/images/git.png'
 # featuredImagePreview: ''
 resources:
@@ -22,7 +22,7 @@ This post aims to explain how, actually, I'm naming things in my git projects. I
 ## Commit
 
 All begin with the [angular conventional commit specification](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-But, as of my projects were not just application code, they also contains some infrastructure manifest (terraform, kubernetes, etc.) I though there were some missing `type`
+But, as of my projects were not just application code, they also contain some infrastructure manifest (terraform, kubernetes, etc.) I thought there were some missing `type`
 in the conventional commit spec. I just added one in my personal workflow, the type `infra`.
 
 Here in a table my usual commit type, with some example.
@@ -44,7 +44,7 @@ Here in a table my usual commit type, with some example.
 
 ### Commit body
 
-I don't use body in my commit very often, but when I do, I just simply write a brieve description about what my commit do.
+I don't use body in my commit very often, but when I do, I just simply write a breve description about what my commit do.
 
 ## Branch
 
@@ -54,7 +54,7 @@ They always begin with a `type` too, usually, I use the same type as my commit, 
 - `feat/add-settings-page`
 - `fix/handle-null-values-on-settings-update`
 
-And when I have an issue/project tracking software, like github projects/issue, or jira,
+And when I have an issue/project tracking software, like GitHub projects/issue, or jira,
 I'm adding the ticket number just after the type, like:
 - `feat/123/add-settings-page`
 - `fix/FP-2129/handle-null-values-on-settings-update`
