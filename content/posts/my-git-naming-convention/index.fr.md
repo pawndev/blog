@@ -1,7 +1,7 @@
 ---
 title: "Mes conventions de nommage git"
 date: 2023-04-21
-lastmod: 2023-04-121
+lastmod: 2023-04-21
 # publishDate: 2023-04-21T14:00:00+02:00
 draft: false
 description: "Mes conventions de nommage git pour les branches et commit"
