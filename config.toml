@@ -104,6 +104,10 @@ defaultContentLanguage = 'en'
     url = "/categories/"
     title = ""
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
