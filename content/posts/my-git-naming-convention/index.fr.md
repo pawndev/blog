@@ -17,19 +17,21 @@ resources:
 
 ## Une note pour le futur moi
 
-Ce poste a pour but d'expliquer comment je nomme mes commits, branches, dans mes projets git. Ce n'est pas un standard ou quoi que ce soit d'autre. Il arrive même que je déroge à mes propres règles.
+Ce poste a pour but d'expliquer comment je nomme mes commits, branches, dans mes projets git. Ce n'est pas un standard.
+Il m'arrive de déroger à mes propres règles.
 
 ## Commit
 
 Tout commence avec la [spec du conventional commit d'angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-Mais comme mes projets n'étaient pas forcément uniquement du code, mais pouvait contenir par exemple des manifestes et fichier de configuration pour de l'infrastructure (terraform, kubernetes, etc.). J'ai pensé qu'il manquait potentiellement des `type` dans la spec du conventional commit. J'ai donc ajouté le type `infra` dans ma convention personnelle.
+Comme mes projets contiennent certes du code, mais aussi d'autres types de ressources, j'ai pensé qu'il manquait potentiellement des `type` dans la spec du conventional commit.
+J'ai donc ajouté le type `infra` dans ma convention personnelle.
 
-Voici dans le tableau ci-dessous mes `type` utilisés, avec quelques exemples.
+Voici la liste de mes types :
 
 | Type     | Description                                                   | Exemple                                              |
 |----------|---------------------------------------------------------------|------------------------------------------------------|
-| feat     | Une nouvelle fonctionnalitée                                  | feat(settings): Ability to change user email         |
-| fix      | Une correction de boque                                       | fix(settings): Handle empty user email               |
+| feat     | Une nouvelle fonctionnalité                                   | feat(settings): Ability to change user email         |
+| fix      | Une correction de bogue                                       | fix(settings): Handle empty user email               |
 | docs     | Changement dans la documentation                              | docs(readme): How to start project                   |
 | style    | Changement qui n'impacte pas la signification du code         | style(whitespace): Add before return                 |
 | refactor | Code pour refactoriser une partie de l'application            | refactor(settings): split create and update handlers |
