@@ -16,8 +16,6 @@ J'ai eu un ticket au travail me demandant de changer la méthode d'authentificat
 nom de compte / mot de passe, jusqu'à une connexion faite par un certificat SSH.
 Je vais donc mettre ce bout de code, au cas où quelqu'un en aurait besoin un jour, ou juste moi à l'avenir.
 
-On va avoir besoin de deux choses, la clé privée, et le certificat publique pour créér un `signer`, qu'on pourra
-utiliser pour la connexion dans la struct `ssh.Client`.
 ```go
 package main
 
@@ -29,9 +27,6 @@ import (
 //go:embed resources/id_rsa
 var privateKey []byte
 
-//go:embed resources/id_rsa.pub
-var certficate []byte
-
 var user = "boulou"
 
 func main() {
@@ -42,25 +37,12 @@ func main() {
     panic(err)
   }
 
-  // parse the certificate
-  cert, _, _, _, err := ssh.ParseAuthorizedKey(certificate)
-  if err != nil {
-    // TODO: handle error gracefully 
-    panic(err)
-  }
-
-  // create a signer using both the certificate and the private key:
-  certSigner, err := ssh.NewCertSigner(cert.(*ssh.Certificate), signer)
-  if err != nil {
-    // TODO: handle error gracefully 
-    panic(err)
-  }
-  
   sshClientConfig := &ssh.ClientConfig{
     User: user,
     Auth: []ssh.AuthMethod{
-      ssh.PublicKeys(certSigner),
+      ssh.PublicKeys(signer),
     },
+    HostKeyCallback: ssh.InsecureIgnoreHostKey(),
   }
   
   // And we have our client config, you can use this to handle an `ssh.Dial` call :
